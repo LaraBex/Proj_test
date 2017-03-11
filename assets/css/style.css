@@ -1,0 +1,268 @@
+html,body{
+  margin:0;
+  padding:0;
+
+}
+
+.menu{
+  background: #000000;
+  padding:20px 15px;
+  font-family: OS;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 3;
+
+
+}
+.container{
+  width:980px;
+  margin:0px auto;
+}
+
+.logo>*:nth-child(3)>img , .logo>img:nth-child(1){
+  opacity:0.6;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+    *html .clearfix             { zoom: 1; } /*  IE6 */
+    *:first-child+html .clearfix { zoom: 1; } /*  IE7 */
+
+    @font-face{
+      font-family: OSB, sans-serif;
+      src: url(../fonts/open-sans.bold.ttf);
+    }
+
+      @font-face{
+        font-family: OS, sans-serif;
+      src: url(../fonts/open-sans.regular.ttf);
+    }
+
+    .logo{
+      float:left;
+    }
+
+    .menu .container div{
+      float: right;
+      display: flex;
+    }
+
+    .menu .container div a{
+      color:#ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      display: block;
+      padding: 8px 10px;
+      margin-top:2px;
+      transition: 0.3s;
+      opacity: 0.6;
+    }
+
+      .menu .container div a:hover{
+          opacity: 1;
+
+      }
+
+      .section_one {
+        background-image: url("../img/back.jpg");
+        padding: 180px 200px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin-top: 84px;
+        position: relative;
+
+      }
+
+.section_one .container{
+  z-index: 2;
+  position: relative;
+}
+
+
+
+
+      .section_one .container p:nth-child(1){
+        color:#ffffff;
+        width:30%;
+        font-size: 40px;
+        margin: 0;
+        padding: 25px 27px;
+        background: #65c25d;
+        text-align: center;
+        border-radius: 2%;
+       }
+
+      .section_one .container p:nth-child(2){
+        color:#ffffff;
+        width:45%;
+        font-size: 18px;
+        margin: 0;
+        padding: 16px;
+        background: #000000;
+        text-align: center;
+        border-radius: 2%;
+        margin-top: 20px;
+      }
+
+      .section_two {
+        height: 1000px;
+      }
+
+.section_two .container .one_three:nth-child(2){
+  margin:0 20%;
+}
+.one_three{
+  width: 20%;
+  float:left;
+  text-align: center;
+}
+
+.section_two .container{
+  padding: 50px 0px;
+}
+
+.phone{
+position: absolute;
+  bottom:  -180px;
+  right: 10%;
+}
+
+.back_img{
+padding: 10px 10px 10px 40px;
+
+  border: #000 solid 1px;
+  margin-bottom: 50px;
+  display: block;
+  width:10%;
+  text-align: center;
+  background-image: url(../img/globe.png);
+  background-repeat: no-repeat;
+  background-size: auto 28px;
+  background-position: 15% center;
+}
+
+.abs_black{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+   background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.fixed_back, .modal_window_form {
+  display: none;
+}
+
+
+.fixed_back{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+   background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+}
+.modal_window_form{
+  position: fixed;
+  width: 320px;
+  left: 0;
+  right:0;
+  top:0;
+  margin: auto;
+  z-index: 100;
+  background: #fff;
+  padding: 20px;
+}
+
+.text{
+  position: absolute;
+  color: #fff;
+  top:50%;
+  left:10%;
+  z-index: 99;
+margin-top: -57px;
+
+
+}
+
+.slide_one.slick-slide{
+  position: relative;
+}
+
+
+.text p:first-child{
+  font-size: 25px;
+}
+
+.slick-arrow{
+  color:transparent;
+  width:40px;
+  height: 40px;
+  background: #666;
+  border:1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: center;
+
+  margin-top:-20px;
+
+  }
+  .slick-prev{
+    left:0;
+    background-image: url("../img/arrow2.png");
+    z-index: 99;
+  }
+
+  .slick-next{
+right: 0;
+background-image: url("../img/arrow.png");
+
+  }
+
+.slick-dots{
+  list-style: none;
+  padding-left: opx;
+  display: flex;
+  justify-content: center;;
+  position: absolute;
+  bottom:20px;
+  width: 100%;
+}
+
+.slick-dots li{
+  margin: 0px 10px;
+}
+
+.slick-dots li button{
+border-radius: 50%;
+background: transparent;
+border: 2px solid white;
+color: transparent;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.slick-dots li button:hover{
+background: rgba(255, 255, 255, 0.5);
+}
+
+.slick-active button{
+  background: #fff ;
+}
